@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+ title: Express API
+  version: 1.0.0
+paths:
+  /keyInventory:
+    post:
+      summary: Create a new post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Post created successfully
+        '400':
+          description: Bad request, check request body
+  /keyMarks:
+    post:
+      summary: Create a new post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Post created successfully
+        '400':
+          description: Bad request, check request body
+  /users:
+    get:
+      summary: get all users
+      responses:
+        '201':
+          description: Post created successfully
