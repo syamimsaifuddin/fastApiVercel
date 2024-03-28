@@ -29,7 +29,7 @@ def create_user_orm(**param):
         return 'User already exist'
     else:
         response = insert(User, **param)
-        return response
+        return 'User successfully created'
     
 def search_user_orm(**param):
 
