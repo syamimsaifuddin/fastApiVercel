@@ -7,7 +7,7 @@ user_router = APIRouter()
 
 @user_router.get("/")
 def root():
-    return 'Hello Idiots'
+    return 'Hellow World'
 
 @user_router.post("/user/create")
 def creating_user(item: create_user_param):
